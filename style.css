@@ -1,0 +1,88 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body { 
+        font-family: Arial, sans-serif; 
+        line-height: 1.5; 
+        color: #333; 
+        background-color: #f4f4f4; 
+        padding: 20px;
+    }
+
+    /* Container für den Lebenslauf (DIN A4 Effekt) */
+    .cv-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Header Design */
+    header {
+        background-color: #343a45; /* Das dunkle Blau aus deinem Bild */
+        color: white;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+    }
+
+    .header-text h1 { font-size: 2.5rem; letter-spacing: 2px; }
+    .header-text .subtitle { font-size: 1.1rem; color: #ccc; margin-top: 10px; }
+
+    .header-contact { margin-left: auto; font-size: 0.85rem; }
+    .header-contact ul { list-style: none; }
+    .header-contact li { margin-bottom: 5px; }
+
+    /* Sektionen */
+    .main-content { padding: 40px; }
+
+    h2 {
+        border-bottom: 2px solid #333;
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+        margin: 30px 0 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Flexbox für Datum und Inhalt (wie im Bild) */
+    .entry {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .date {
+        flex: 0 0 150px; /* Feste Breite für das Datum links */
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .details { flex: 1; }
+    .details h3 { font-size: 1rem; color: #000; margin-bottom: 8px; text-transform: uppercase; }
+    
+    ul { padding-left: 20px; margin-top: 5px; }
+    li { margin-bottom: 3px; font-size: 0.95rem; }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Responsive (für Handy) */
+    @media (max-width: 768px) {
+        header { flex-direction: column; text-align: center; }
+        .header-contact { margin-left: 0; text-align: center; margin-top: 20px; }
+        .entry { flex-direction: column; }
+        .date { margin-bottom: 5px; }
+        .skills-grid { grid-template-columns: 1fr; }
+    }
