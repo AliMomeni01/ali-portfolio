@@ -86,3 +86,22 @@
         .date { margin-bottom: 5px; }
         .skills-grid { grid-template-columns: 1fr; }
     }
+    .header-contact a:visited {
+        color: #ccc;
+    }
+    .header-contact a{
+        color: #ccc;
+    }
+    .header-contact a:active {
+        color: #fff;
+    }
+
+
+    .python-zertifikat a:active, .linux-zertifikat a:active {
+        color:#000;
+    }
+    
+    .python-zertifikat a, .linux-zertifikat a{
+        color: #000;
+        
+    }
