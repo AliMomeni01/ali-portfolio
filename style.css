@@ -105,3 +105,11 @@
         color: #000;
         
     }
+
+    .details a:active {
+        color:#000;
+    }
+
+    .details a {
+        color:#000;
+    }
