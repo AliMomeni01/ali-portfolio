@@ -87,13 +87,13 @@
         .skills-grid { grid-template-columns: 1fr; }
     }
     .header-contact a:visited {
-        color: #ccc;
+        color: white;
     }
     .header-contact a{
-        color: #ccc;
+        color: white;
     }
     .header-contact a:active {
-        color: #fff;
+        color: white;
     }
 
 
@@ -106,10 +106,11 @@
         
     }
 
-    .details a:active {
+    .details a:active  .details a:visited {
         color:#000;
     }
 
     .details a {
         color:#000;
     }
+    
